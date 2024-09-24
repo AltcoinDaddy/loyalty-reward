@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pancake-pink: #D754FF;
+  --pancake-purple: #8C4EFF;
+  --pancake-blue: #25CBD3;
+  --pancake-yellow: #FFB237;
+  --pancake-green: #31D0AA;
+}
+
+body {
+  background: linear-gradient(135deg, #17171A 0%, #28282D 100%);
+  color: #F4EEFF;
+}
+
+.pancake-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pancake-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pancake-button {
+  background: linear-gradient(90deg, var(--pancake-pink), var(--pancake-purple));
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.pancake-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.pancake-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: white;
+}
+
+.pancake-progress {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pancake-progress-bar {
+  background: linear-gradient(90deg, var(--pancake-blue), var(--pancake-green));
+  transition: width 0.5s ease;
+}
